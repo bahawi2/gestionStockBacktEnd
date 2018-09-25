@@ -40,12 +40,15 @@ public class IProduitImpl implements IProuduitService{
 		
 	}
 
+
+
 	@Override
-	public void deleteProduit(String ref) {
+	public void deleteProduit(Long id) {
 		// TODO Auto-generated method stub
 		Produit p=new Produit();
-		p.setRef(ref);
+		p.setId(id);
 		produits.remove(p);
+		
 	}
 
 }
